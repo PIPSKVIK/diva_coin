@@ -1,0 +1,21 @@
+@import "_vars/vars";
+@import "_fonts/fonts";
+
+body {
+  position: relative;
+  overflow-x: hidden;
+  min-width: 320px;
+  font-family: $default-font;
+  font-size: $font-size;
+  color: $font-color;
+  background: $background;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:focus,
+button:active {
+  outline: none;
+}

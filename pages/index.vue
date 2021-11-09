@@ -1,7 +1,11 @@
 <template>
-  <Tutorial/>
+  <div></div>
 </template>
 
 <script>
-export default {}
+export default {
+  layout: 'mainLayout',
+}
 </script>
+
+<style lang="scss" scoped></style>

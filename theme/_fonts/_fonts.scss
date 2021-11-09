@@ -1,0 +1,7 @@
+@import "../_mixins/font-face";
+
+// font-family: 'Kitsch-ExtraboldItalic', sans-serif
+@include font("Kitsch-ExtraboldItalic", italic, 400, "/fonts/Kitsch-ExtraboldItalic/Kitsch-ExtraboldItalic.woff2");
+
+// font-family: 'KitschText-Extralight', sans-serif
+@include font("KitschText-Extralight", normal, 400, "/fonts/KitschText-Extralight/KitschText-Extralight.woff2");

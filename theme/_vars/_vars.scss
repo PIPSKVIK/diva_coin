@@ -1,0 +1,22 @@
+// Fonts vars
+$default-font: 'KitschText-Extralight', sans-serif;
+$italic-font: "Kitsch-ExtraboldItalic", sans-serif;
+
+$background: #f2f2f2;
+$font-color: #000000;
+$font-size: 16px;
+
+
+// media example
+// @include md-desktop {} 1024
+// @include sm-tablets {} 768
+// @include sm-mobile {} 375
+
+// wrapper example
+// @include desktop;
+// @include laptop;
+// @include tablet;
+// @include mobile;
+
+// sprite use
+// <svg-icon name="sample" />
