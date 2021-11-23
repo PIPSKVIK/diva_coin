@@ -1,12 +1,15 @@
 @import "_vars/vars";
 @import "_fonts/fonts";
+@import "_pages";
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;900&display=swap');
 
 body {
   position: relative;
   overflow-x: hidden;
   min-width: 320px;
-  font-family: $default-font;
+  font-family: 'Outfit', sans-serif;
   font-size: $font-size;
+  font-weight: 400;
   color: $font-color;
   background: $background;
 }

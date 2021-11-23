@@ -46,24 +46,24 @@ $sm-mobile-width: 375px;
 @mixin desktop {
   max-width: 1440px;
   margin: 0 auto;
-  padding-left: 88px;
-  padding-right: 88px;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 @mixin laptop {
   max-width: 1024px;
-  padding-left: 40px;
-  padding-right: 40px;
+  // padding-left: 40px;
+  // padding-right: 40px;
 }
 
 @mixin tablet {
   max-width: 768px;
-  padding-left: 40px;
-  padding-right: 40px;
+  // padding-left: 40px;
+  // padding-right: 40px;
 }
 
 @mixin mobile {
   max-width: 375px;
-  padding-left: 24px;
-  padding-right: 24px;
+  // padding-left: 24px;
+  // padding-right: 24px;
 }
