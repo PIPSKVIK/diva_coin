@@ -1,5 +1,4 @@
 .header {
-  @include desktop;
 }
 .header__top {
   display: flex;
@@ -18,4 +17,42 @@
 }
 .header__nav-links-wrapper {
   display: flex;
+  align-items: center;
+  padding: 20px 10px;
+}
+
+.header__nav-buttos-wrapper {
+  margin-left: 50px;
+  display: flex;
+  position: relative;
+}
+.header__nav-basket-button {
+  margin-right: 5px;
+  & svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+.header__nav-basket-wrapper {
+  display: flex;
+  margin-right: 15px;
+}
+
+.header__nav-likes-button {
+  margin-right: 5px;
+  & svg {
+    width: 20px;
+    height: 20px;
+  }
+}
+.header__nav-likes-wrapper {
+  display: flex;
+  margin-right: 15px;
+}
+
+.header__nav-language-button {
+  & svg {
+    width: 20px;
+    height: 20px;
+  }
 }

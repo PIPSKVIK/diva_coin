@@ -13,6 +13,8 @@
 .header-drop-menu__link-wrapper {
   padding: 10px;
   transition: all 0.3s linear;
+  display: block;
+  color: inherit;
   &:hover {
     background-color: $grey-bg;
     padding-left: 20px;

@@ -3,6 +3,11 @@ export const PROPS_STRING_DEFAULT = {
   default: '',
 };
 
+export const PROPS_NUMBER_DEFAULT = {
+  type: Number,
+  default: 0,
+};
+
 export const PROPS_BOOLEAN_DEFAULT = {
   type: Boolean,
   default: false,

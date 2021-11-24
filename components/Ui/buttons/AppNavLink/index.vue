@@ -1,6 +1,18 @@
 <template>
   <div class="nav-link">
-    <nuxt-link :to="path" class="nav-link__item" @click.native="navLinkHeandler">
+    <AppIconButton
+      v-if="dropMenu"
+      class="nav-link__icon"
+      :class="showDropMenu ? 'nav-link__icon--open' : null"
+      @click="showDropMenu = true"
+    >
+      <svg-icon name="icon-drop-menu" />
+    </AppIconButton>
+    <nuxt-link
+      :to="path"
+      class="nav-link__item"
+      @click.native="navLinkHeandler"
+    >
       <slot />
     </nuxt-link>
 
@@ -21,12 +33,14 @@ import {
   PROPS_ARRAY_DEFAULT,
 } from '@/constants/props'
 import AppHeaderDropMenu from '@/components/header/AppHeaderDropMenu'
+import AppIconButton from '@/components/Ui/buttons/AppIconButton'
 
 export default {
   name: 'AppNavLink',
 
   components: {
     AppHeaderDropMenu,
+    AppIconButton,
   },
 
   props: {
@@ -43,10 +57,12 @@ export default {
 
   mounted() {
     document.addEventListener('click', this.hideNavDropMenu.bind(this), true)
+    document.addEventListener('keydown', this.heandleKeyDown)
   },
 
   beforeDestroy() {
     document.removeEventListener('click', this.hideNavDropMenu)
+    document.removeEventListener('keydown', this.heandleKeyDown)
   },
 
   methods: {
@@ -57,7 +73,12 @@ export default {
       if (this.dropMenu) {
         this.showDropMenu = true
       }
-    }
-  }
+    },
+    heandleKeyDown(e) {
+      if (this.dropMenu && e.key === 'Escape') {
+        this.hideNavDropMenu()
+      }
+    },
+  },
 }
 </script>

@@ -1,13 +1,14 @@
 <template>
   <div class="header-drop-menu">
-    <div
+    <nuxt-link
       v-for="(item, idx) in dropMenuLinksList"
       :key="idx"
+      :to="item.link"
       class="header-drop-menu__link-wrapper"
     >
       <p class="header-drop-menu__link-name">{{ item.name }}</p>
       <p class="header-drop-menu__link-description">{{ item.description }}</p>
-    </div>
+    </nuxt-link>
   </div>
 </template>
 
