@@ -1,6 +1,5 @@
 .header {
   @include desktop;
-  color: blue;
 }
 .header__top {
   display: flex;
@@ -16,4 +15,7 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+}
+.header__nav-links-wrapper {
+  display: flex;
 }

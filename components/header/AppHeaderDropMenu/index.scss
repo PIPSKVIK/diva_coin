@@ -1,0 +1,27 @@
+.header-drop-menu {
+  position: absolute;
+  top: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 10px;
+  background: $background;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  min-width: 300px;
+  cursor: pointer;
+}
+.header-drop-menu__link-wrapper {
+  padding: 10px;
+  transition: all 0.3s linear;
+  &:hover {
+    background-color: $grey-bg;
+    padding-left: 20px;
+  }
+}
+.header-drop-menu__link-name {
+  font-size: 14px;
+}
+.header-drop-menu__link-description {
+  font-weight: 300;
+  font-size: 12px;
+}

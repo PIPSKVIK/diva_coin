@@ -1,0 +1,30 @@
+.nav-link {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 2rem;
+  }
+}
+.nav-link__item {
+  font-weight: 600;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  color: inherit;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: all 0.2s linear;
+
+  &:hover,
+  &:focus {
+    color: $text-hover-color;
+  }
+}
+
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s;
+}
+.fade-enter, .fade-leave-to /* .fade-leave-active до версии 2.1.8 */ {
+  opacity: 0;
+}

@@ -1,18 +1,18 @@
 <template>
   <div class="main-layout">
-    <BaseHeader />
+    <AppHeader />
     <Nuxt />
   </div>
 </template>
 
 <script>
-import BaseHeader from '@/components/header/BaseHeader/index.vue'
+import AppHeader from '@/components/header/AppHeader'
 
 export default {
   name: 'MainLayout',
 
   components: {
-    BaseHeader,
+    AppHeader,
   },
 }
 </script>
